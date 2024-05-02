@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+<p>
+    Jangan pernah memanggil document.write setelah dokumen selesai dimuat.
+    ini akan menimpa seluruh dokumen.
+</p>
+    
+<script>
+    document.write(5 + 6);
+</script>
+
+<h4>
+    Menggunakan document.write() setelah dokumen HTML dimuat,
+    akan menghapus semua HTML yang ada:
+</h4>
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+<h4>You can use an alert box to display data:</h4>
+<button type="button" onclick="window.alert(5 + 6);">Try it</button>
+
+<h4>
+    Anda dapat memanggil metode window.print()
+    di browser untuk mencetak konten jendela saat ini.
+</h4>
+<button onclick="window.print()">Print this page</button>
+</body>
+</html> 

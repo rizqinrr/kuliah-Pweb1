@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge Live Code - HTML & CSS</title>
+<style>
+  * {
+    text-align: center;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 4px;
+  }
+  tr:nth-child(even) {background-color: lightgray}
+</style>
+   </head>
+<body>
+<h1>JavaScript Arithmetic</h1>
+  <table>
+    <tr>
+      <th>Variabel</th>
+      <th>Nilai</th>
+      <th rowspan="5" onmousemove=onlamp() onmouseleave=offlamp()><img  id="lamp" src="pic_bulboff.gif" alt="off"></th>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td id="angka1" onclick="ubah1()">2</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td id="angka2" onclick="ubah2()"></td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td id="angka3" onclick="ubah3()"></td>
+    </tr>
+    <tr>
+      <td>Hasil</td>
+      <td id="demo" onmousemove=math1() onmouseleave=math2()></td>
+    </tr>
+    
+  </table>
+
+  <button onclick="math3()"> Ubah Nilai</button>
+
+  <script>
+    var x;
+    var y;
+    var z;
+
+    function ubah1() {
+        x = parseInt(prompt("masukan angka untuk a :"));
+        document.getElementById('angka1').innerHTML=x;
+    }
+
+    function ubah2() {
+        y = parseInt(prompt("masukan angka untuk b :"));
+        document.getElementById('angka2').innerHTML=y;
+    }
+    function ubah3() {
+        z = parseInt(prompt("masukan angka untuk c :"));
+        document.getElementById('angka3').innerHTML=z;
+    }
+
+    function math2() {
+      document.getElementById("demo").innerHTML="";
+    }
+
+    function math1() {
+        hasil = x + y - z;
+        document.getElementById('demo').innerHTML= hasil;
+    }
+
+    function onlamp() {
+        document.getElementById('lamp').src="pic_bulbon.gif";
+    }
+    function offlamp() {
+        document.getElementById('lamp').src="pic_bulboff.gif";
+    }
+
+  </script>
+</body>
+</html>
