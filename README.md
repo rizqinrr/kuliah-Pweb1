@@ -154,6 +154,8 @@ Itu adalah struktur dasar dari sebuah halaman web HTML. Kita dapat melihat pengg
 </body>
 </html>
 ```
+#### Hasil
+![Screenshot 2024-05-04 085617](https://github.com/rizqinrr/pemograman-web1/assets/152271198/b4afd71b-0a28-42aa-a801-af3520cf0062)
 
 
 
